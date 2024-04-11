@@ -9,7 +9,7 @@ def index():
     projects = [ i.replace(".json", "") for i in os.listdir('json') if i.endswith('.json') ]
     return render_template('index.html', projects=projects)
 
-@app.route('/project/<project_name>')
+@app.route('/<project_name>')
 def project(project_name):
     with open(f'json/{project_name}.json', 'r') as f:
         data = json.load(f)

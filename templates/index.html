@@ -14,7 +14,7 @@
             2024 NYCU DS&OOP
         </h1>
         {% for project_name in projects %}
-            <a href="/project/{{ project_name }}" class="block px-8 py-5 text-center text-white text-4xl font-semibold bg-blue-500 rounded-xl hover:bg-blue-600">{{ project_name|capitalize}}</a>
+            <a href="/{{ project_name }}" class="block px-8 py-5 text-center text-white text-4xl font-semibold bg-blue-500 rounded-xl hover:bg-blue-600">{{ project_name|capitalize}}</a>
         {% endfor %}
     </div>
 </body>
