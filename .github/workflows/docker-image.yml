@@ -32,4 +32,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ghcr.io/jotpalch/grading-assistant-webpage:${{ github.run_number }}, ghcr.io/jotpalch/grading-assistant-webpage:latest
+        tags: ghcr.io/jotpalch/grading-assistant-webpage:latest, ghcr.io/jotpalch/grading-assistant-webpage:${{ github.run_number }}.0
