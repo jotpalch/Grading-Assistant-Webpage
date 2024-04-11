@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 NYCU DS&OOP</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    
+    <div class="space-y-4 p-10 rounded-2xl bg-gray-200">
+        <h1 class="p-14 text-center text-4xl font-bold">
+            2024 NYCU DS&OOP
+        </h1>
+        {% for project_name in projects %}
+            <a href="/project/{{ project_name }}" class="block px-8 py-5 text-center text-white text-4xl font-semibold bg-blue-500 rounded-xl hover:bg-blue-600">{{ project_name|capitalize}}</a>
+        {% endfor %}
+    </div>
+</body>
+</html>
