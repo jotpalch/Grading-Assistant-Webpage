@@ -11,6 +11,7 @@ docker pull ghcr.io/jotpalch/grading-assistant-webpage:latest
 
 # Run the Docker container
 docker run \
+    --name grading-assistant-webpage \
     -v $current_dir/json:/app/json \
     -p 30005:3000 \
     -d --rm ghcr.io/jotpalch/grading-assistant-webpage:latest
