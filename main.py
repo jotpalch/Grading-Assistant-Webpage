@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     projects = [ i.replace(".json", "") for i in os.listdir('json') if i.endswith('.json') ]
-    return render_template('index.html', projects=projects)
+    return render_template('index.html', projects=projects.sort())
 
 @app.route('/<project_name>')
 def project(project_name):
